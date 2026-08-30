@@ -34,7 +34,7 @@ public abstract class TradingApp implements Observer {
         }
 
         String color = direction == Direction.UP ? GREEN : RED;
-        String arrow = direction == Direction.UP ? "↗" : "↘";
+        String arrow = direction == Direction.UP ? "^" : "v";
         System.out.printf("%s%s%s: %s(%s) is now priced at %s$%.2f %s%s%n",
                 appColor, name.toUpperCase(), RESET,
                 stock.getCompanyName(), stock.getSymbol(),
